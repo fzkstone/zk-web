@@ -2,6 +2,14 @@ drop database zk_test;
 create database zk_test;
 use zk_test;
 
+CREATE table playerlog (
+  playerId CHAR(34),
+  apiPath TEXT,
+  apiParam TEXt,
+  logDateTime INT,
+  PRIMARY KEY (playerId, logDateTime)
+);
+
 CREATE TABLE book (
   id INT,
   category_id INT(11),
