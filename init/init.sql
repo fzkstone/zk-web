@@ -51,6 +51,8 @@ CREATE TABLE incretest (
   PRIMARY KEY (id)
 );
 
+curl "http://127.0.0.1/updatePlayerHp?targetPlayerId=Usaaee05424ae3282cf700b8280f78093b&calcValue=-2"
+
 INSERT INTO book (id, category_id, title, author_id, detail, price, image) VALUES (1, 1, 'title01', 1, 'detail01', 780, 'aaa');
 INSERT INTO book (id, category_id, title, author_id, detail, price, image) VALUES (2, 2, 'title02', 1, 'detail02', 520, 'aaa');
 INSERT INTO book (id, category_id, title, author_id, detail, price, image) VALUES (3, 3, 'title03', 1, 'detail03', 600, 'aaa');
