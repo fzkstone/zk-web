@@ -10,6 +10,14 @@ CREATE table playerlog (
   PRIMARY KEY (playerId, logDateTime)
 );
 
+CREATE table itemlog (
+  itemId CHAR(34),
+  apiPath TEXT,
+  apiParam TEXt,
+  logDateTime INT,
+  PRIMARY KEY (itemId, logDateTime)
+);
+
 CREATE TABLE book (
   id INT,
   category_id INT(11),
